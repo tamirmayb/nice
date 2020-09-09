@@ -1,4 +1,4 @@
-package com.nice.producer;
+package com.nice.consumer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,11 +9,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class ProducerApp {
-    private static final Logger log = LoggerFactory.getLogger(ProducerApp.class);
+public class ConsumerApp {
+    private static final Logger log = LoggerFactory.getLogger(ConsumerApp.class);
 
     public static void main(String args[]) {
-        SpringApplication.run(ProducerApp.class);
+        SpringApplication.run(ConsumerApp.class);
     }
 
     @Bean
